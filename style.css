@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic Medium", "Yu Gothic", Meiryo, sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+header {
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-button {
+    top: 0;
+    display: flex;
+    gap: 10px; /* ボタン間の間隔 */
+}
+
+.logo {
+  width: 20%;
+}
+
+.topimage {
+  width: 35%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.filter-btn {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px; /* 文字とアイコンの間隔 */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.filter-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.filter-btn svg {
+    width: 40px; /* 矢印のサイズ調整 */
+    height: 60px;
+    fill: black; /* 矢印の色 */
+}
+
+
+
+  .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; 
+    height: 1400px; 
+    margin: 50px 20px;
+  }
+
+  .shirt_all {
+    position: relative;
+    width: 23%;
+    height: auto;
+    padding: 0 10px;
+    margin: 0;
+    padding-bottom: 30px;
+    margin-top: 40px;
+  }
+
+  .shirt-image {
+    width: 100%;
+    height: auto;
+  }
+
+
+  .T-shirt1 {
+    width: 100%;
+    height: 100%;
+    border: 3px solid black; 
+    border-radius: 40px;       
+    box-sizing: border-box;   
+  }
+
+
+
+
+
+  @media screen and (min-width: 1052px) {
+    .container {
+        box-sizing: content-box;
+        max-width: 1352px;
+        padding: 50px 0;
+        margin: 0 auto;
+        /* height: 1200px;   手動 */
+    }
+} 
+
+h3 {
+  padding: 20px 0;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px; /* 色ボタンの間隔 */
+  position: absolute;
+  width: 40%;
+  right: 0;
+}
+
+.color-circle {
+  margin-top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-circle:hover {
+  transform: scale(1.1);
+}
+
+.aaa {
+  display: flex;
+  position: relative;
+}
+
+.price {
+  position: absolute;
+  width: 40%;
+  bottom: 0;
+}
+
+.cart-btn {
+  position: absolute;
+  width: 45%;
+  height: 7%;
+  bottom: 0;
+  right: 3px;
+  border-radius: 12px;
+}
+
+
+/* カテゴリー全体をグリッド表示に */
+.filter-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* 各カテゴリーボックス */
+.dropdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 画像サイズを固定して整える */
+.filter-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* 潰さず綺麗に収まる */
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* カテゴリ名のテキスト */
+.product-category {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+
